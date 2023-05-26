@@ -94,7 +94,4 @@ select {
   text-overflow: ""; */
   appearance: none;
 }
-select:hover {
-  background-color: yellow;
-}
 /* ==================================Hero/Main End=================================== */
