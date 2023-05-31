@@ -98,3 +98,139 @@ select:hover {
   background-color: yellow;
 }
 /* ==================================Hero/Main End=================================== */
+/* ==================================Article Section=================================== */
+.hol {
+  background-color: black;
+  color: #ffbfbf;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.article1,
+.article2 {
+  display: flex;
+}
+/* 
+.article2 {
+  display: flex;
+  background-size: cover;
+}
+
+.artImg1 {
+  width: 25em;
+  height: 10em;
+
+  padding: 0em 0.095em 0.2em 0.095em;
+}
+.artImg2 {
+  width: 25em;
+  height: 10em;
+
+  padding: 0em 0.095em 0em 0.095em;
+}
+.artImg1:hover,
+.artImg1:focus {
+  transform: scale(1.12);
+}
+.artImg2:hover,
+.artImg2:focus {
+  transform: scale(1.15);
+}
+.article1 a img:first-child {
+  padding-left: 0em;
+}
+.article2 a img:first-child {
+  padding-left: 0em;
+}
+.article1 a img:last-child {
+  padding-right: 0em;
+}
+.article2 a img:last-child {
+  padding-right: 0em;
+} */
+.article1 a,
+.article2 a {
+  flex: 1;
+}
+.article1 img,
+.article2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 12em;
+}
+
+/* ==================================Article Section Ends=================================== */
+/* ==================================Footer Starts=================================== */
+.footerMain {
+  display: flex;
+  background-color: black;
+  background-size: cover;
+  height: 14.9em;
+  color: #ffbfbf;
+  /* font-size: 2em; */
+  padding: 01em;
+  letter-spacing: 0.2em;
+  /* align-items: center; */
+}
+.footer1 {
+  /* background-color: red; */
+  width: 33%;
+  padding-right: 1.2em;
+}
+.footer1 ul {
+  font-weight: 900;
+}
+.footer1 a li {
+  color: #ffbfbf;
+  text-decoration: none;
+  padding: 0.6em;
+  font-weight: 530;
+  font-size: 1em;
+  line-height: 2.3em;
+  list-style: none;
+}
+.footer1 img {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 30%;
+}
+.footer1Item {
+  display: flex;
+  justify-content: space-between;
+}
+.footer2 {
+  /* background-color: hotpink; */
+  width: 33%;
+  padding-left: 1em;
+  text-align: center;
+  padding-top: 0.4em;
+}
+
+.footer2 ul {
+  font-weight: 900;
+}
+.footer2 ul li {
+  font-weight: normal;
+}
+.footer2 li,
+.footer3 li {
+  list-style: none;
+  line-height: 3em;
+  font-size: 0.6em;
+  padding-top: 2em;
+  /* letter-spacing: 0.3em; */
+}
+.footer3 {
+  /* background-color: blue; */
+  width: 34%;
+  padding-left: 1em;
+  text-align: center;
+  padding-top: 0.4em;
+}
+.footer3 ul {
+  font-weight: 900;
+}
+
+/* ==================================Footer Ends=================================== */
