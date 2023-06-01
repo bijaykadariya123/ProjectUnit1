@@ -9,13 +9,16 @@ $form.on("submit", (event) => {
   $.ajax(
     `https://holidays.abstractapi.com/v1/?api_key=bafcafa7fb2243929607c7d3481da810&country=US&year=2023&month=${monthNumber}&day=${dayNumber}`
   ).then((getDatas) => {
-    console.log(getDatas[0]);
-    console.log(getDatas[0].type);
+    // console.log(getDatas[0]);
+    // console.log(getDatas[0].type);
     const info = getDatas[0];
     const div = $("#publish");
     const newDiv = $("<div>").addClass("info1");
 
-    if (
+    if (getDatas.length === 0) {
+      //the response is an empty array
+      newDiv.html(`<h5> It is not a Holiday.</h5>`);
+    } else if (
       (monthNumber === 1 && dayNumber === 1) ||
       (monthNumber === 1 && dayNumber === 16) ||
       (monthNumber === 2 && dayNumber === 20) ||
@@ -28,14 +31,10 @@ $form.on("submit", (event) => {
       (monthNumber === 12 && dayNumber === 25)
     )
       newDiv.html(`
-        <h1> It is a Holiday: ${info.type}</h1>
-        `);
+        <h5> It is a Holiday.  Type of Holiday: ${info.type} Holiday.</h5>`);
     else {
-      newDiv.html(`<h2> It is not a holiday: ${info.type} </h2>`);
+      newDiv.html(`<h5> It is not a Holiday.</h5>`);
     }
-
     div.append(newDiv);
-    // const alphas = div.append(newDiv);
-    // console.log(alphas);
   });
 });

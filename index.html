@@ -12,6 +12,12 @@
     ></script>
     <script type="text/javascript" src="./app.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Sofia+Sans+Semi+Condensed&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ===============================Header=============================== -->
@@ -35,21 +41,33 @@
     </div>
     <!-- ===============================Header Ends=============================== -->
     <div class="main">
-      <h1>Is It a Holiday</h1>
-      <div id="form">
-        <form>
-          <label>Input month:</label><br />
-          <input type="number" name="month" placeholder="Enter a month" /><br />
-          <label>Input Day:</label><br />
-          <input type="number" name="day" placeholder="Enter a day" /><br />
-          <input type="submit" value="search" />
-        </form>
+      <div class="inputSection">
+        <h1>Is It a Holiday</h1>
+        <div id="form">
+          <form>
+            <label>Input month:</label><br />
+            <input
+              class="mainInput"
+              type="number"
+              name="month"
+              placeholder="Enter a month"
+            /><br />
+            <label>Input Day:</label><br />
+            <input
+              class="mainInput"
+              type="number"
+              name="day"
+              placeholder="Enter a day"
+            /><br />
+            <input class="calc" type="submit" value="search" />
+          </form>
+        </div>
       </div>
       <div id="publish"></div>
     </div>
     <!-- ========================================Article Section============================ -->
+    <div class="hol">Holidays of United States of America</div>
     <div class="Article">
-      <div class="hol">Holidays of United States of America</div>
       <div class="article1">
         <a href="https://resolutiondenver.com/history-of-new-years-eve/"
           ><img class="artImg1" src="./NewYearPic.jpeg" alt="pic1/1"
@@ -108,8 +126,8 @@
             <img src="./InstagramLogoP.webp" />
           </div>
           <div class="footer1Item">
-            <a href="https://www.instagram.com/"> <li>LinkedIn</li></a>
-            <img src="./InstagramLogoP.webp" />
+            <a href="https://www.linkedin.com/"> <li>LinkedIn</li></a>
+            <img src="./LinkedInPRO.webp" />
           </div>
         </ul>
       </div>

@@ -5,16 +5,17 @@
 body {
   padding: 0.2em;
   background-color: lightblue;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 /* ======================================Header====================================== */
 .Top {
   display: flex;
-  justify-content: space-between;
   background-color: rgb(5, 5, 5);
   padding: 0.2em 0.8em 0.2em 0.8em;
 }
 .Icon {
   display: flex;
+  flex: 1;
   width: 19em;
 }
 .Icon p {
@@ -40,6 +41,7 @@ button:hover {
 
 .navBar {
   display: flex;
+  flex: 2;
   font-size: 1.7em;
   justify-content: space-between;
   width: 35em;
@@ -81,22 +83,43 @@ button:hover {
 /* ======================================Header Ends====================================== */
 /* ======================================Hero/Main=================================== */
 .main {
+  display: flex;
   background-image: url("./hero.jpeg");
   background-size: cover;
-
+  width: 100%;
   height: 30em;
   background-repeat: no-repeat;
 }
-select {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: ""; */
-  appearance: none;
+.inputSection {
+  width: 30%;
+  padding: 2em;
 }
-select:hover {
-  background-color: yellow;
+h1 {
+  margin-bottom: 0.5em;
 }
+label {
+  color: black;
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.calc {
+  font-size: 1.5em;
+  width: 4.5em;
+  margin-top: 0.5em;
+}
+input {
+  height: 2em;
+  border-radius: 0.4em;
+  font-size: 2em;
+  padding: 0em 0.5em 0em 0.5em;
+  margin-bottom: 1em;
+}
+#publish {
+  padding: 2em;
+  color: white;
+}
+
 /* ==================================Hero/Main End=================================== */
 /* ==================================Article Section=================================== */
 .hol {
@@ -107,49 +130,10 @@ select:hover {
   font-size: 2em;
   font-weight: 800;
 }
-
 .article1,
 .article2 {
   display: flex;
 }
-/* 
-.article2 {
-  display: flex;
-  background-size: cover;
-}
-
-.artImg1 {
-  width: 25em;
-  height: 10em;
-
-  padding: 0em 0.095em 0.2em 0.095em;
-}
-.artImg2 {
-  width: 25em;
-  height: 10em;
-
-  padding: 0em 0.095em 0em 0.095em;
-}
-.artImg1:hover,
-.artImg1:focus {
-  transform: scale(1.12);
-}
-.artImg2:hover,
-.artImg2:focus {
-  transform: scale(1.15);
-}
-.article1 a img:first-child {
-  padding-left: 0em;
-}
-.article2 a img:first-child {
-  padding-left: 0em;
-}
-.article1 a img:last-child {
-  padding-right: 0em;
-}
-.article2 a img:last-child {
-  padding-right: 0em;
-} */
 .article1 a,
 .article2 a {
   flex: 1;
@@ -161,76 +145,225 @@ select:hover {
   height: 12em;
 }
 
+.artImg1:hover,
+.artImg1:focus,
+.artImg2:hover,
+.artImg2:focus {
+  opacity: 80%;
+  transform: scale(1.2);
+}
+
+.article1 a img:first-child,
+.article2 a img:first-child {
+  padding-left: 0em;
+}
+
+.article1 a img:last-child,
+.article2 a img:last-child {
+  padding-right: 0em;
+}
+
 /* ==================================Article Section Ends=================================== */
 /* ==================================Footer Starts=================================== */
 .footerMain {
   display: flex;
   background-color: black;
   background-size: cover;
-  height: 14.9em;
+  /* height: 14.9em; */
   color: #ffbfbf;
-  /* font-size: 2em; */
   padding: 01em;
   letter-spacing: 0.2em;
-  /* align-items: center; */
+}
+.footer1,
+.footer2,
+.footer3 {
+  flex: 1;
 }
 .footer1 {
-  /* background-color: red; */
-  width: 33%;
   padding-right: 1.2em;
 }
 .footer1 ul {
   font-weight: 900;
 }
+.footer1 a {
+  text-decoration: none;
+  font-weight: normal;
+}
+.footer1 a:hover,
+.footer a:focus {
+  transform: scale(1.2);
+}
 .footer1 a li {
   color: #ffbfbf;
   text-decoration: none;
   padding: 0.6em;
-  font-weight: 530;
   font-size: 1em;
-  line-height: 2.3em;
-  list-style: none;
 }
 .footer1 img {
   height: 1.5em;
   width: 1.5em;
-  border-radius: 30%;
+  padding: 0.9em;
 }
 .footer1Item {
   display: flex;
   justify-content: space-between;
 }
 .footer2 {
-  /* background-color: hotpink; */
-  width: 33%;
+  /* width: 33%; */
   padding-left: 1em;
   text-align: center;
   padding-top: 0.4em;
 }
 
-.footer2 ul {
+.footer2 ul,
+.footer3 ul {
   font-weight: 900;
 }
 .footer2 ul li {
   font-weight: normal;
 }
+.footer1 li,
 .footer2 li,
 .footer3 li {
   list-style: none;
-  line-height: 3em;
+  line-height: 2.3em;
   font-size: 0.6em;
   padding-top: 2em;
-  /* letter-spacing: 0.3em; */
 }
 .footer3 {
-  /* background-color: blue; */
-  width: 34%;
   padding-left: 1em;
   text-align: center;
   padding-top: 0.4em;
 }
-.footer3 ul {
-  font-weight: 900;
-}
 
 /* ==================================Footer Ends=================================== */
+
+/* ==================================mobile version=================================== */
+/* Ihpone 12 Pro == Dimension 390 * 844  */
+@media only screen and (max-width: 390px) {
+  body {
+    padding: 0.2em;
+    background-color: lightblue;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+  }
+  .Top {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(5, 5, 5);
+    padding: 0.1em 0.2em 0.1em 0.2em;
+  }
+  .Top img {
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    margin-top: 0.55em;
+    /* padding: 0em 0.25em 0em 0em; */
+  }
+  .Icon p {
+    font-size: 0.01em;
+    margin-top: 105em;
+    margin-left: 50em;
+  }
+  .Icon {
+    width: 1.2em;
+  }
+  .navBar {
+    font-size: 0.05em;
+  }
+
+  .navBarkLink {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 190em;
+    margin-top: 20em;
+    font-size: 1.05em;
+  }
+
+  .inputSearch img {
+    height: 0.58em;
+    width: 2em;
+  }
+  .inputSearch input {
+    font-size: 0.9em;
+    height: 30em;
+    width: 65em;
+    margin-bottom: em;
+  }
+  .inputSearch button {
+    height: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  /* ===========================================HeroSection Starts============================================ */
+  .main {
+    background-image: url("./hero.jpeg");
+    background-size: 100%;
+    height: 9em;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+    font-size: 1em;
+    color: #ffbfbf;
+  }
+  .inputSection {
+    width: 35%;
+    padding: 0.22em;
+    /* background-color: red; */
+  }
+  label {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+  }
+
+  .calc {
+    font-size: 0.8em;
+    width: 4.5em;
+    margin-top: 0.001em;
+  }
+  #publish h5 {
+    font-size: 0.7em;
+    color: black;
+  }
+  input {
+    font-size: 0.5em;
+  }
+  /* ===========================================HeroSection Ends============================================ */
+  /* ===========================================Article Section============================================ */
+
+  .hol {
+    font-size: 0.7em;
+  }
+  .Article {
+    display: flex;
+  }
+  .article1,
+  .article2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===========================================Article Section Ends============================================ */
+  .footerMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer1 {
+    flex-basis: 100%;
+    font-size: 0.4em;
+  }
+  .footer2,
+  .footer3 {
+    flex: 1;
+    color: red;
+    letter-spacing: 0.01em;
+  }
+  .footer2 ul,
+  .footer3 ul {
+    display: none;
+  }
+}
+/* ==================================mobile version ends===================================*/
