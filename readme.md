@@ -4,7 +4,7 @@
 
 ## Project Description:
 
-##### I have built a website using HTML5, CSS3, JavaScript and Jquery which serve a purpose of finding National holidays of United States of America of current year i.e. 2023. In this project i have used a AJAX method for API request. The API has four required parameter which are listed below:
+##### I have built a responsive website using HTML5, CSS3, JavaScript and Jquery which serve a purpose of finding National holidays of United States of America of current year i.e. 2023. In this project i have used a AJAX method for API request. The API has four required parameter which are listed below:
 
 ###### 1. Country Name = US (or you can use any 2 digit country code for paid version of API)
 
@@ -32,6 +32,6 @@
 
 ###### 1. Flex box
 
-###### 2. media query
+###### 2. media query (for responsive)
 
 ###### 3. And many other CSS properties for alignment, hover effect, scaling, margin, padding etc.
