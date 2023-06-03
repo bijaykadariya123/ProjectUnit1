@@ -17,7 +17,7 @@ $form.on("submit", (event) => {
 
     if (getDatas.length === 0) {
       //the response is an empty array
-      newDiv.html(`<h5> It is not a Holiday.</h5>`);
+      newDiv.html(`<h2> It is not a Holiday.</h2>`);
     } else if (
       (monthNumber === 1 && dayNumber === 1) ||
       (monthNumber === 1 && dayNumber === 16) ||
@@ -31,9 +31,9 @@ $form.on("submit", (event) => {
       (monthNumber === 12 && dayNumber === 25)
     )
       newDiv.html(`
-        <h5> It is a Holiday.  Type of Holiday: ${info.type} Holiday.</h5>`);
+        <h2> It is a Holiday.  Type of Holiday: ${info.type} Holiday.</h2>`);
     else {
-      newDiv.html(`<h5> It is not a Holiday.</h5>`);
+      newDiv.html(`<h2> It is not a Holiday.</h2>`);
     }
     div.append(newDiv);
   });

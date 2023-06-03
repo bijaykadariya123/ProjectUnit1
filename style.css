@@ -6,6 +6,10 @@ body {
   padding: 0.2em;
   background-color: lightblue;
   font-family: "Sofia Sans Semi Condensed", sans-serif;
+  background-color: black !important;
+}
+label {
+  color: #ffbfbf;
 }
 /* ======================================Header====================================== */
 .Top {
@@ -84,8 +88,8 @@ button:hover {
 /* ======================================Hero/Main=================================== */
 .main {
   display: flex;
-  background-image: url("./hero.jpeg");
-  background-size: cover;
+  background-image: url("./Images :logo/hero.jpeg");
+  background-size: cover !important;
   width: 100%;
   height: 30em;
   background-repeat: no-repeat;
@@ -96,9 +100,9 @@ button:hover {
 }
 h1 {
   margin-bottom: 0.5em;
+  color: #ffbfbf;
 }
 label {
-  color: black;
   font-weight: 900;
   font-size: 2em;
   margin-bottom: 0.5em;
@@ -240,15 +244,15 @@ input {
 
 /* ==================================mobile version=================================== */
 /* Ihpone 12 Pro == Dimension 390 * 844  */
-@media only screen and (max-width: 390px) {
+
+@media (max-width: 390px) {
   body {
     padding: 0.2em;
-    background-color: lightblue;
+    background-color: black !;
     font-family: "Sofia Sans Semi Condensed", sans-serif;
   }
   .Top {
     display: flex;
-    /* justify-content: space-between; */
     background-color: rgb(5, 5, 5);
     padding: 0.1em 0.2em 0.1em 0.2em;
   }
@@ -257,7 +261,6 @@ input {
     height: 0.75em;
     border-radius: 50%;
     margin-top: 0.55em;
-    /* padding: 0em 0.25em 0em 0em; */
   }
   .Icon p {
     font-size: 0.01em;
@@ -273,7 +276,6 @@ input {
 
   .navBarkLink {
     display: flex;
-    /* justify-content: space-around; */
     width: 190em;
     margin-top: 20em;
     font-size: 1.05em;
@@ -296,9 +298,9 @@ input {
 
   /* ===========================================HeroSection Starts============================================ */
   .main {
-    background-image: url("./hero.jpeg");
-    background-size: 100%;
-    height: 9em;
+    background-image: url("./Images :logo/hero.jpeg");
+    background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
   }
 
@@ -310,7 +312,6 @@ input {
   .inputSection {
     width: 35%;
     padding: 0.22em;
-    /* background-color: red; */
   }
   label {
     font-size: 0.9em;
@@ -367,3 +368,475 @@ input {
   }
 }
 /* ==================================mobile version ends===================================*/
+
+/* ==================================391 to 500 px===================================*/
+@media (min-width: 391px) and (max-width: 500px) {
+  body {
+    padding: 0.2em;
+    background-color: black !important;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+  }
+  .Top {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+  }
+  .Top img {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-top: 0.55em;
+  }
+  .Icon p {
+    font-size: 0.01em;
+    margin-top: 105em;
+    margin-left: 50em;
+  }
+  .Icon {
+    width: 1.5em;
+  }
+  .navBar {
+    font-size: 0.05em;
+  }
+
+  .navBarkLink {
+    display: flex;
+    width: 190em;
+    margin-top: 20em;
+    font-size: 1.05em;
+  }
+
+  .inputSearch img {
+    height: 0.58em;
+    width: 2em;
+  }
+  .inputSearch input {
+    font-size: 0.9em;
+    height: 30em;
+    width: 150em;
+    margin-bottom: em;
+  }
+  .inputSearch button {
+    height: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  /* ===========================================HeroSection Starts============================================ */
+  .main {
+    background-image: url("./Images :logo/hero.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 9em;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+    font-size: 1em;
+    color: #ffbfbf;
+  }
+  .inputSection {
+    width: 35%;
+    padding: 0.22em;
+  }
+  label {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+  }
+
+  .calc {
+    font-size: 0.8em;
+    width: 4.5em;
+    margin-top: 0.001em;
+  }
+  #publish h5 {
+    font-size: 0.7em;
+    color: black;
+  }
+  input {
+    font-size: 0.5em;
+  }
+  /* ===========================================HeroSection Ends============================================ */
+  /* ===========================================Article Section============================================ */
+
+  .hol {
+    font-size: 0.7em;
+  }
+  .Article {
+    display: flex;
+  }
+  .article1,
+  .article2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===========================================Article Section Ends============================================ */
+  .footerMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer1 {
+    flex-basis: 100%;
+    font-size: 0.4em;
+  }
+  .footer2,
+  .footer3 {
+    flex: 1;
+    color: red;
+    letter-spacing: 0.01em;
+  }
+  .footer2 ul,
+  .footer3 ul {
+    display: none;
+  }
+}
+/* ==================================391 to 500 px ends===================================*/
+
+/* ==================================501 to 650px Starts===================================*/
+@media (min-width: 501px) and (max-width: 650px) {
+  body {
+    padding: 0.2em;
+    background-color: lightblue;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+  }
+  /* ==========TOOoooooioooooop===== */
+  .Top {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    padding: 0.05em 0.3em 0.05em 0.3em;
+  }
+  .Icon {
+    display: flex;
+    flex: 1;
+    width: 18em;
+  }
+  .Icon p {
+    margin-top: 0.15em;
+    font-size: 0.8em;
+    padding-left: 0.2em;
+    color: #ffbfbf;
+    margin-top: 1em;
+  }
+
+  .Top img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-top: 0.2em;
+  }
+
+  .navBar {
+    display: flex;
+    flex: 2;
+    font-size: 0.6em;
+    justify-content: space-between;
+    margin-top: 0.2em;
+  }
+  .navBarkLink {
+    display: flex;
+    width: 23em;
+    margin-top: 1.5em;
+  }
+  .inputSearchField {
+    width: 10em;
+  }
+
+  .inputSearch img {
+    height: 1em;
+    margin-top: 0.02em;
+  }
+  .inputSearch button {
+    height: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  /* ==========top Ends===== */
+
+  /* ====================================Hero starts======================= */
+  .main {
+    background-image: url("./Images :logo/hero.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 10.5em;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+    font-size: 1em;
+    color: #ffbfbf;
+  }
+  .inputSection {
+    width: 35%;
+    padding: 0.22em;
+  }
+  label {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+  }
+
+  .calc {
+    font-size: 0.8em;
+    width: 4.5em;
+    margin-top: 0.001em;
+  }
+  #publish h5 {
+    font-size: 0.7em;
+    color: black;
+  }
+  input {
+    font-size: 0.5em;
+  }
+  /* ===========================================HeroSection Ends============================================ */
+  /* ===========================================Article Section============================================ */
+
+  .hol {
+    font-size: 1.3em;
+  }
+  .Article {
+    display: flex;
+  }
+  .article1,
+  .article2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* ===========================================Article Section Ends============================================ */
+  .footerMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer1 {
+    flex-basis: 100%;
+    font-size: 0.4em;
+  }
+  .footer2,
+  .footer3 {
+    flex: 1;
+    color: red;
+    letter-spacing: 0.01em;
+  }
+  .footer2 ul,
+  .footer3 ul {
+    display: none;
+  }
+}
+/* ==================================501 to 650px  ends===================================*/
+
+/* ==================================651 to 850px  starts===================================*/
+@media (min-width: 651px) and (max-width: 850px) {
+  .Top {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    padding: 0em 0.1em 0em 0.1em;
+  }
+  .Icon {
+    display: flex;
+    width: 25em;
+  }
+  .Icon p {
+    font-size: 1em;
+    color: #ffbfbf;
+    margin-top: 1.2em;
+  }
+
+  .Top img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-top: 0.7em;
+  }
+
+  .navBar {
+    font-size: 0.9em;
+  }
+  .navBarkLink {
+    width: 20em;
+    margin-top: 1.2em;
+  }
+  .inputSearchField {
+    width: 10em;
+  }
+  .inputSearch {
+    margin-top: 0.5em;
+  }
+
+  .inputSearch img {
+    height: 1em;
+    margin-top: 0.02em;
+  }
+  .inputSearch button {
+    height: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  /* =====================main ============================================== */
+
+  .main {
+    background-image: url("./Images :logo/hero.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 10em;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 0em;
+    font-size: 1em;
+    color: #ffbfbf;
+  }
+  .inputSection {
+    width: 35%;
+    padding: 0.22em;
+  }
+  label {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+  }
+
+  .calc {
+    font-size: 0.8em;
+    width: 4.5em;
+    margin-top: 0.001em;
+  }
+  #publish h5 {
+    font-size: 0.7em;
+    color: black;
+  }
+  input {
+    font-size: 0.5em;
+  }
+
+  /* =====================main Ends ============================================== */
+  /* =====================Articl Section ============================================== */
+
+  .hol {
+    font-size: 0.7em;
+  }
+  .Article {
+    display: flex;
+  }
+  .article1,
+  .article2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* =====================Article Section Ends ============================================== */
+}
+/* ==================================651 to 850px  ends===================================*/
+
+/* ==================================851 to 1405px  Starts===================================*/
+@media (min-width: 851px) and (max-width: 1405px) {
+  .Top {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    padding: 0.2em 0.8em 0.2em 0.8em;
+  }
+  .Icon {
+    display: flex;
+    flex: 1;
+    width: 19em;
+  }
+  .Icon p {
+    margin-top: 0.15em;
+    font-size: 1.5em;
+    padding-left: 0.02em;
+    color: #ffbfbf;
+    margin-top: 1em;
+  }
+
+  .Top img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-top: 1em;
+  }
+
+  .navBar {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    width: 05em;
+    margin-top: 0.4em;
+  }
+
+  .navBarkLink {
+    display: flex;
+    justify-content: space-between;
+    width: 21em;
+    margin-top: 1.7em;
+  }
+  .inputSearch input {
+    height: 3em;
+    border-radius: 0.4em;
+    font-size: 0.6em;
+  }
+
+  .inputSearch img {
+    height: 1.7em;
+    width: 2.4em;
+    /* margin-bottom: -0.2em; */
+    margin-top: -0.2em;
+  }
+
+  .inputSearch button {
+    height: 2em;
+    width: 2.5em;
+    margin-top: 1em;
+  }
+
+  /* ==================Hero 850 -1150 starts================================== */
+
+  .main {
+    display: flex;
+    background-image: url("./Images :logo/hero.jpeg");
+    background-size: cover !important;
+    width: 100%;
+    height: 17em;
+    background-repeat: no-repeat;
+  }
+  .inputSection {
+    width: 30%;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  label {
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .calc {
+    font-size: 1em;
+    width: 4.5em;
+    height: 1.8em;
+    margin-top: 0.5em;
+  }
+  input {
+    height: 1em;
+    border-radius: 0.4em;
+    font-size: 1em;
+    padding: 0em 0.5em 0em 0.5em;
+    margin-bottom: 0.5em;
+    width: 7em;
+  }
+  .mainInput {
+    height: 1.4em;
+  }
+  #publish {
+    padding: 2em;
+    color: white;
+  }
+
+  /* ==================Hero Ends================================== */
+}
+/* ==================================851 to 1405px  ends===================================*/
